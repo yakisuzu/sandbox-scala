@@ -1,4 +1,13 @@
+object Practice1 extends App {
 
+  import java.util.Scanner
+
+  val input = {
+    val s = new Scanner(System.in)
+    (s.nextInt, s.nextInt, s.nextInt, s.next)
+  }
+  println(s"${input._1 + input._2 + input._3} ${input._4}")
+}
 
 object PrintMonad extends App {
 
@@ -38,15 +47,4 @@ object PrintMonad extends App {
   def scannerClose(sc: Scanner) = IO {
     sc.close()
   }
-}
-
-object Main extends App {
-
-  import java.util.Scanner
-
-  val input = {
-    val s = new Scanner(System.in)
-    (s.nextInt, s.nextInt, s.nextInt, s.next)
-  }
-  println(s"${input._1 + input._2 + input._3} ${input._4}")
 }
