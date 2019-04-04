@@ -1,4 +1,4 @@
-name := "scala"
+name := "sandbox-scala"
 
 version := "0.1"
 
