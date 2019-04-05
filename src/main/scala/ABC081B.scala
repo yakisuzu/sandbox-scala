@@ -42,6 +42,7 @@ object ABC081Bex extends App {
   def toHalf(s: List[Int]): List[Int] =
     s.map(_ / 2)
 
+  @scala.annotation.tailrec
   def countHalf(s: List[Int], success: Int = 0): Int =
     if (canHalf(s)) countHalf(toHalf(s), success + 1)
     else success
